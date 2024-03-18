@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "speedrun"
+version = "0.1.0"
+description = ""
+authors = ["admin <admin@local>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.2"
+flask-sqlalchemy = "^3.1.1"
+psycopg2-binary = "^2.9.9"
+requests = "^2.31.0"
+protobuf = "3.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

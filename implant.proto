@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Register {
+  string Password = 1;
+  string GUID = 2;
+  string Username = 3;
+  string Hostname = 4;
+}
+
+message TaskRequest {
+  string TaskGuid = 1;
+  int32 Opcode = 2;
+  string Args = 3;
+}
+
+message TaskResponse {
+  string TaskGuid = 1;
+  // todo add tastaut
+  bytes Response = 3;
+}
